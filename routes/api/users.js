@@ -7,6 +7,4 @@ var passport = require("../../config/passport");
 router.route("/")
 	.post(userController.create);
 
-
-
 module.exports = router
