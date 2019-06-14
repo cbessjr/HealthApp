@@ -1,7 +1,7 @@
 const express = require("express");
 const PORT = process.env.PORT || 3001;
 const app = express();
-const db = require("./db/models");
+const db = require("./models");
 const routes = require("./routes");
 
 // ===============================Middleware=======================
