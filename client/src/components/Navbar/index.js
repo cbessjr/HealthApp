@@ -1,23 +1,27 @@
-import React from "react";
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
+import React, { Component } from 'react'
+import NavbarContent from './NavbarContent'
+import NavbarIcon from './NavbarIcon'
 
-export default class NavBar extends React.Component {
+export default class Navbar extends Component {
+	state = {
+		isopen: true
+	}
+
+	toggleNavbar = () => {
+		this.setState(prevState => ({
+			isOpen: !prevState.isOpen
+		}))
+	}
+
 	render() {
-		return (
-			<>
-				<Navbar bg="primary" variant="dark">
-					<Navbar.Brand href="/">HealthApp</Navbar.Brand>
-					<Nav className="mr-auto">
-						<Nav.Link href="/">Home</Nav.Link>
-						<Nav.Link href="/user/new-user">New User</Nav.Link>
-						<Nav.Link href="/">blank</Nav.Link>
-					</Nav>
-					<Form inline>
-						<FormControl type="text" placeholder="Nonfunctional" className="mr-sm-2" />
-						<Button variant="outline-info">Search</Button>
-					</Form>
-				</Navbar>
-			</>
-		)
+		return <dev className="navbar-container">
+			<NavbarContent isOpen={this.state.isopen} />
+			<dev className="navbar-icon">
+				<NavbarIcon
+					isOpen={this.state.isopen}
+					handleClick={this.toggleNavbar}
+				/>
+			</dev>
+		</dev>
 	}
 }

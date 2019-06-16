@@ -28,6 +28,11 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "sequelize": "^5.8.9",
-    "sequelize-cli": "^5.5.0"
+    "sequelize-cli": "^5.5.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-icons": "^2.2.7",
+    "react-scripts": "1.0.17",
+    "react-transition-group": "^2.2.1"
   }
 }
