@@ -37,6 +37,7 @@ To deploy, simply add and commit your changes, and push to Heroku. As is, the NP
 
 [Matt Kilcup](https://www.linkedin.com/in/matt-kilcup-515697168/) <p>
 [James Barker](https://www.linkedin.com/in/james-barker-78961295/) <p>
+[Dan Solomon](https://www.linkedin.com/in/danrsolomon/)<p>
 [Adam Karman](https://www.linkedin.com/in/adam-karman-1bb026171/) <p>
 [Charles Bess, Jr.](https://www.linkedin.com/in/charles-bess-a97b055/)
 
