@@ -107,14 +107,15 @@ export default class Navigation extends React.Component {
                   </UncontrolledDropdown>
                 </Nav>
               </Collapse>
-              <Button color="danger" onClick={this.handleLogOut.bind(this)}>
+              <Button color="danger" id="logBtn" onClick={this.handleLogOut.bind(this)}>
                 Log Out
               </Button>
             </React.Fragment>
           ) : (
             <React.Fragment>
+              <Nav className="mr-auto" navbar />
               <UncontrolledButtonDropdown>
-                <DropdownToggle color="primary" className="mr-5" caret>
+                <DropdownToggle color="primary" id="logBtn" caret>
                   Log In
                 </DropdownToggle>
                 <DropdownMenu>
