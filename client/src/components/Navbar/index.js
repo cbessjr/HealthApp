@@ -17,33 +17,45 @@ import {
   Col,
   Input
 } from "reactstrap";
+import "./Navbar.css";
 
 export default class Navigation extends React.Component {
   state = {
-    isOpen: false
+    isOpen: false,
+    isLoggedIn: false,
+    email: "",
+    password: ""
   };
+
   toggle() {
     this.setState({
-      isOpen: !this.state.isOpen,
-      isLoggedIn: false
+      isOpen: !this.state.isOpen
     });
-	}
-	
+  }
+
   handleLogIn() {
     this.setState({
       isLoggedIn: true
     });
-	}
-	
+  }
+
   handleLogOut() {
     this.setState({
       isLoggedIn: false
     });
-	}
-	
+  }
+
+  handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  };
+
   render() {
+    console.log(this.state);
     return (
-      <div>
+      <div className="navigation">
         <Navbar color="light" light expand="md">
           <NavbarBrand href="/">GetHealthy</NavbarBrand>
           {this.state.isLoggedIn ? (
@@ -95,53 +107,57 @@ export default class Navigation extends React.Component {
                   </UncontrolledDropdown>
                 </Nav>
               </Collapse>
-              <Button
-                color="danger"
-                onClick={this.handleLogOut.bind(this)}
-              >
+              <Button color="danger" onClick={this.handleLogOut.bind(this)}>
                 Log Out
               </Button>
             </React.Fragment>
           ) : (
-            <UncontrolledButtonDropdown>
-              <DropdownToggle caret>Login</DropdownToggle>
-              <DropdownMenu>
-                <Form>
-                  <FormGroup row>
-                    <Label for="email" sm={2}>
-                      Email
-                    </Label>
-                    <Col sm={10}>
-                      <Input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="email address"
-                      />
-                    </Col>
-                  </FormGroup>
-                  <FormGroup row>
-                    <Label for="password" sm={2}>
-                      Password
-                    </Label>
-                    <Col sm={10}>
-                      <Input
-                        type="password"
-                        name="password"
-                        id="password"
-                        placeholder="password"
-                      />
-                    </Col>
-                  </FormGroup>
-                </Form>
-                <Button
-                  onClick={this.handleLogIn.bind(this)}
-                  color="primary"
-                >
-                  Submit
-                </Button>{" "}
-              </DropdownMenu>
-            </UncontrolledButtonDropdown>
+            <React.Fragment>
+              <UncontrolledButtonDropdown>
+                <DropdownToggle color="primary" className="mr-5" caret>
+                  Log In
+                </DropdownToggle>
+                <DropdownMenu>
+                  <Col md="auto" sm="auto">
+                    <Form>
+                      <FormGroup row>
+                        <Label for="email" md="auto">
+                          Email
+                        </Label>
+                        <Col sm="auto">
+                          <Input
+                            type="email"
+                            name="email"
+                            value={this.state.email}
+                            id="email"
+                            placeholder="email address"
+                            onChange={this.handleInputChange}
+                          />
+                        </Col>
+                      </FormGroup>
+                      <FormGroup row>
+                        <Label for="password" md="auto">
+                          Password
+                        </Label>
+                        <Col sm="auto">
+                          <Input
+                            value={this.state.password}
+                            type="password"
+                            name="password"
+                            id="password"
+                            placeholder="password"
+                            onChange={this.handleInputChange}
+                          />
+                        </Col>
+                      </FormGroup>
+                    </Form>
+                  </Col>
+                  <Button onClick={this.handleLogIn.bind(this)} color="primary">
+                    Submit
+                  </Button>{" "}
+                </DropdownMenu>
+              </UncontrolledButtonDropdown>
+            </React.Fragment>
           )}
         </Navbar>
       </div>
