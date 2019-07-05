@@ -17,7 +17,7 @@ import {
   Col,
   Input
 } from "reactstrap";
-import "./Navbar.css";
+import "./style.css";
 
 export default class Navigation extends React.Component {
   state = {
