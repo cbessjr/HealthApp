@@ -27,3 +27,37 @@ Your app should now be running on <http://localhost:3000>. The Express server sh
 ## Deployment (Heroku)
 
 To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+
+
+
+# Project Title: HealthApp
+
+## Team Members:
+
+
+[Matt Kilcup](https://www.linkedin.com/in/matt-kilcup-515697168/) <p>
+[James Barker](https://www.linkedin.com/in/james-barker-78961295/) <p>
+[Dan Solomon](https://www.linkedin.com/in/danrsolomon/)<p>
+[Adam Karman](https://www.linkedin.com/in/adam-karman-1bb026171/) <p>
+[Charles Bess, Jr.](https://www.linkedin.com/in/charles-bess-a97b055/)
+
+
+## Overview
+
+HealthApp is a web (mobile-ready) application designed with three tiers of functionality: Manage medication, Manage exercise, Medical Reporting.
+
+
+### Tier 1
+
+Medication Management** – To monitor and schedule prescriptions for user(s) using push notifications to manage medicine intake. Medicine and prescription updates (names and descriptions) will be gathered from an established API(s) to verify names are accurate for reporting to PCP or hospital staff.
+
+#### **Manual management of prescriptions, by the user, will be required due to privacy concerns. Prescription information will be encrypted and stored to a database.
+
+
+### Tier 2
+
+Exercise and Health Management – To monitor health and exercise as provided manually by the user or gathered from an established API source. Examples of health tracking will be, steps, running, workout information, blood pressure, etc. API(s) will be used to pull information from health monitoring appliances and hardware, in addition to manual update.
+
+### Tier 3
+
+Medical Reporting – Reporting of health and medication related data in user specified format, .txt, .pdf. 
