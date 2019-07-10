@@ -15,7 +15,9 @@ import {
 	FormGroup,
 	Label,
 	Col,
-	Input,
+  Input,
+  NavItem,
+  NavLink
 } from 'reactstrap'
 
 export default class Example extends React.Component {
@@ -40,6 +42,9 @@ export default class Example extends React.Component {
 					<NavbarToggler onClick={this.toggle} />
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav className="ml-auto" navbar>
+            <NavItem>
+                <NavLink href="/Dashboard/">Dashboard</NavLink>
+              </NavItem>
 							<UncontrolledDropdown nav inNavbar>
 								<DropdownToggle nav caret>
 									Medications
