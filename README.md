@@ -58,6 +58,17 @@ Medication Management** – To monitor and schedule prescriptions for user(s) us
 
 Exercise and Health Management – To monitor health and exercise as provided manually by the user or gathered from an established API source. Examples of health tracking will be, steps, running, workout information, blood pressure, etc. API(s) will be used to pull information from health monitoring appliances and hardware, in addition to manual update.
 
+
 ### Tier 3
 
-Medical Reporting – Reporting of health and medication related data in user specified format, .txt, .pdf. 
+Meal Reporting – Food and meal creation. The user will be allowed to select foods for consumption tracking. Foods can be paired to make meals for calorie intake tracking. API(s) will be used to pull current calorie counts. User will be able to manually add foods not in the API selection.
+
+
+### Tier 4
+
+Reports - Reports can be pulled from the medication calendar/database, exercise and health, and meal tracking. The reports will downloaded via .pdf or .txt for distribution only by the user to needed parties.
+
+
+### Tier 5
+
+Calendar - Calendar display/reporting for all medical, exercise, and meal information. A calendar option will be added to each menu for scheduling. The calendar on the user page will allow for the option to remove data for display, via checkboxes, so the data requested is clearly shown to the user. Example, if the user has exercise and medication data, but only wants to view the medication schedule. The checkbox option will remove the exercise data so it is not active in the calendar.
