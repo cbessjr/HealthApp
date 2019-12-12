@@ -14,13 +14,12 @@ class Home extends Component {
       <div className="App">
         <Navbar />
         <div>
-          <img src={logo} className="App-logo" alt="logo" />       
+          <img src={logo} className="App-logo" alt="logo" />
         </div>
         <h2 className="text-center">Welcome To GetHealthy</h2>
-        <img src="./img/meds.jpg" />  
         <Carousel />
 
-				<Footer />
+        <Footer />
       </div>
     );
   }
