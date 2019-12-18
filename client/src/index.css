@@ -3,6 +3,10 @@ body {
   padding: 0;
   font-family: sans-serif;
   background-image: url("img/Blue_Highlights.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar-container {
