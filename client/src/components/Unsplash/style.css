@@ -1,0 +1,25 @@
+.slideshow {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+
+.slideshow span {
+  opacity: 0.6;
+  display: inline-block;
+  animation: marquee 125s linear infinite;
+}
+
+.slideshow span:hover {
+  opacity: 1;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
