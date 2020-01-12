@@ -1,15 +1,18 @@
 .slideshow {
-  margin: 0 auto;
+  opacity: 0.7;
+  /* height: 300px; */
   white-space: nowrap;
-  overflow: hidden;
-  position: absolute;
+  display: inline-block;
+  /* margin: 0 1em; */
+  animation: marquee infinite 100s linear;
 }
 
-.slideshow span {
+/* .slideshow span {
   opacity: 0.6;
   display: inline-block;
-  animation: marquee 125s linear infinite;
-}
+  margin: 0 1em;
+  animation: marquee 10s linear 5s infinite;
+} */
 
 .slideshow span:hover {
   opacity: 1;
