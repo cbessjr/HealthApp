@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-// import { Button, Form, FormGroup, Input, Label } from 'reactstrap';
-// import Image from '../Image';
 import clientId from '../../util';
 import './style.css';
 
@@ -11,7 +9,7 @@ const Pictures = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(`https://api.unsplash.com/search/photos?query=health&client_id=${clientId}&orientation=landscape&fit=crop&h=140`)
+    axios.get(`https://api.unsplash.com/search/photos?query=health&client_id=${clientId}&orientation=landscape&per_page=100`)
       .then((data) => {
         setImageLoaded(data.data.results);
         setLoading(false);
