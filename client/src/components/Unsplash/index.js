@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import clientId from '../../util';
+import clientId from '../../util.js';
 import './style.css';
 
 const Pictures = () => {
