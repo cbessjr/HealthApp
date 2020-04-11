@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import logo from '../img/Heart_Blue.svg';
 import Footer from '../components/Footer';
 import Unsplash from '../components/Unsplash';
+import Modal_About from '../components/Modal_About';
 
 class Home extends Component {
 
@@ -11,6 +12,7 @@ class Home extends Component {
     return (
       <>
         <Navbar />
+        <Modal_About />
       <div className="App">
         <div>
           <img src={logo} className="App-logo" alt="logo" />
