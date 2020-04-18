@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 // import Carousel from '../components/Carousel/carousel';
-import logo from '../img/Heart_Blue.svg';
+import logo from '../img/HealthAppLogoAnimated.gif';
 import Footer from '../components/Footer';
 import Unsplash from '../components/Unsplash';
-import Modal_About from '../components/Modal_About';
+// import ModalAbout from '../components/ModalAbout';
 
 class Home extends Component {
 
@@ -12,7 +12,7 @@ class Home extends Component {
     return (
       <>
         <Navbar />
-        <Modal_About />
+      
       <div className="App">
         <div>
           <img src={logo} className="App-logo" alt="logo" />
