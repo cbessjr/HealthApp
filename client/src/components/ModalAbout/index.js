@@ -17,7 +17,7 @@ const ModalAbout = (props) => {
 
   return (
     <div class="centerModalAbout">
-      <Button color="info" class="ModalBtn" onClick={toggle}>About</Button>
+      <Button color="info" id="modalBtn" onClick={toggle}>About</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Modal title</ModalHeader>
         <ModalBody>
