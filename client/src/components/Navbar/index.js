@@ -20,6 +20,7 @@ import {
   Input
 } from "reactstrap";
 import "./style.css";
+import ModalAbout from "../ModalAbout";
 
 export default class Navigation extends React.Component {
   state = {
@@ -111,7 +112,11 @@ export default class Navigation extends React.Component {
                     </DropdownMenu>
                   </UncontrolledDropdown>
                 </Nav>
+
               </Collapse>
+
+              <ModalAbout />
+
               <Button
                 color="danger"
                 id="logBtn"
@@ -119,11 +124,16 @@ export default class Navigation extends React.Component {
               >
                 Log Out
               </Button>
+              
             </React.Fragment>
           ) : (
             <React.Fragment>
+
               <Nav className="mr-auto" navbar />
+              <ModalAbout id="modalBtn"/>
               <UncontrolledButtonDropdown>
+
+                
                 <DropdownToggle color="primary" id="logBtn" caret>
                   Log In
                 </DropdownToggle>

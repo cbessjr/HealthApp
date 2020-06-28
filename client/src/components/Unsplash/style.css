@@ -1,0 +1,28 @@
+.slideshow {
+  opacity: 0.7;
+  /* height: 300px; */
+  white-space: nowrap;
+  display: inline-block;
+  /* margin: 0 1em; */
+  animation: marquee infinite 100s linear;
+}
+
+/* .slideshow span {
+  opacity: 0.6;
+  display: inline-block;
+  margin: 0 1em;
+  animation: marquee 10s linear 5s infinite;
+} */
+
+.slideshow span:hover {
+  opacity: 1;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
