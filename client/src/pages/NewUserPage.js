@@ -1,7 +1,11 @@
-import React, { Component } from "react";
+import React from 'react';
 
-class NewUserPage extends Component {
-
-}
+const NewUserPage = () => {
+  return (
+    <div className="new-user">
+      <h3>new user page works</h3>
+    </div>
+  );
+};
 
 export default NewUserPage;
