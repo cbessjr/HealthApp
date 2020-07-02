@@ -12,7 +12,7 @@ const Collapseable = (props) => {
       <Collapse isOpen={isOpen}>
         <Card>
           <CardBody>
-
+            {props.children}
           </CardBody>
         </Card>
       </Collapse>
