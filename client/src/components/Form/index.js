@@ -9,7 +9,7 @@ const CreateAccount = () => {
         <Input type="text" name="firstName" id="firstName" placeholder="Please enter your first name" />
       </FormGroup>
       <FormGroup>
-        <Label for="middleInitial">Password</Label>
+        <Label for="middleInitial">Middle Initial</Label>
         <Input type="text" name="middleInitial" id="middleInitial" placeholder="Middle Initial" />
       </FormGroup>
       <FormGroup>
